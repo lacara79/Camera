@@ -20,7 +20,7 @@ if (environment.production) {
   enableProdMode();
 }
 
-Em seguida:
+#Em seguida:
 `ionic build`
 
 `npx cap sync`

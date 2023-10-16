@@ -1,15 +1,14 @@
-import { Component } from '@angular/core';
 import { Component, ElementRef, ViewChild, OnInit } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { Camera, CameraResultType } from '@capacitor/camera';
 
 @Component({
   selector: 'app-home',
-@ -7,6 +9,22 @@ import { Component } from '@angular/core';
+  templateUrl: 'home.page.html',
+  styleUrls: ['home.page.scss'],
 })
 export class HomePage {
 
-  constructor() {}
   photo: any = "";
 
   constructor() {}

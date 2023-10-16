@@ -1,3 +1,9 @@
+# Notas
+Esse projeto é uma base do site com algumas alterações.
+
+https://capacitorjs.com/docs/apis/camera#install
+https://ionicframework.com/docs/native/camera
+
 # Iniciando um projeto Camera
 `ionic start camera`
 
@@ -43,6 +49,40 @@ if (environment.production) {
     </ion-card-content>
   </ion-card>
 </ion-content>
+```
+
+# home.page.ts
+
+```
+
+import { Component, ElementRef, ViewChild, OnInit } from '@angular/core';
+import { Camera, CameraResultType } from '@capacitor/camera';
+
+@Component({
+  selector: 'app-home',
+  templateUrl: 'home.page.html',
+  styleUrls: ['home.page.scss'],
+})
+export class HomePage {
+
+  photo: any = "";
+
+  constructor() {}
+  
+  async abrir(){
+    const takePicture = async () => {
+      const image = await Camera.getPhoto({
+        quality: 100,
+        allowEditing: true,
+        resultType: CameraResultType.DataUrl,
+        saveToGallery: true
+      });
+      
+      this.photo = image.dataUrl;
+    };
+    takePicture();
+  }
+}
 ```
 
 # Em seguida:

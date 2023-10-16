@@ -18,7 +18,7 @@
 defineCustomElements(window);
 if (environment.production) {
   enableProdMode();
-}```
+}
 
 Em seguida:
 `ionic build`

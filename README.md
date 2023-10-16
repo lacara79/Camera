@@ -17,10 +17,11 @@
 
 defineCustomElements(window);
 if (environment.production) {
-  enableProdMode();`
+  enableProdMode();
 }```
 
 Em seguida:
-`ionic build
-npx cap sync
-`
+`ionic build`
+
+`npx cap sync`
+

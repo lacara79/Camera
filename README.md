@@ -1,5 +1,8 @@
-# Camera
-Ionic - Angular - Câmera
+# Iniciando um projeto Camera
+
+ionic start camera
+
+Escolha o Framework Angular
 
 # Install Plugin 
 

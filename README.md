@@ -1,23 +1,24 @@
 # Iniciando um projeto Camera
-ionic start camera
+`ionic start camera`
 
 Escolha o Framework Angular
 
 # Install Plugin 
-npm install @capacitor/camera
+`npm install @capacitor/camera`
 
 #Importing PWA Elements​
-npm install @ionic/pwa-elements
+`npm install @ionic/pwa-elements`
 
-No documento main.ts(ANGULAR):
-
+**No documento main.ts(ANGULAR):**
+`
 import { defineCustomElements } from '@ionic/pwa-elements/loader';
 
 defineCustomElements(window);
 if (environment.production) {
   enableProdMode();
 }
-
+`
 Em seguida:
-ionic build
+`ionic build
 npx cap sync
+`

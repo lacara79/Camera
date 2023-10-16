@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewChild, OnInit } from '@angular/core';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+//import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { Camera, CameraResultType } from '@capacitor/camera';
 
 @Component({
@@ -21,8 +21,7 @@ export class HomePage {
         resultType: CameraResultType.DataUrl,
         saveToGallery: true
       });
-    
-      // const theActualPicture = image.dataUrl;
+      
       this.photo = image.dataUrl;
     };
     takePicture();

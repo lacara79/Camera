@@ -13,7 +13,8 @@
 
 **No documento main.ts(ANGULAR):**
 
-```import { defineCustomElements } from '@ionic/pwa-elements/loader';
+```
+import { defineCustomElements } from '@ionic/pwa-elements/loader';
 
 defineCustomElements(window);
 if (environment.production) {
@@ -21,7 +22,6 @@ if (environment.production) {
 }
 
 ```
-
 
 # Em seguida:
 `ionic build`

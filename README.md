@@ -13,12 +13,12 @@
 
 **No documento main.ts(ANGULAR):**
 
-`import { defineCustomElements } from '@ionic/pwa-elements/loader';`
+`import { defineCustomElements } from '@ionic/pwa-elements/loader';
 
-`defineCustomElements(window);`
-`if (environment.production) {`
-`  enableProdMode();`
-`}`
+defineCustomElements(window);
+if (environment.production) {
+  enableProdMode();`
+}`
 
 Em seguida:
 `ionic build

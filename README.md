@@ -22,6 +22,28 @@ if (environment.production) {
 }
 
 ```
+# home.page.html
+
+```
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Câmera
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-button (click)="abrir()">Abrir</ion-button>
+  </div>
+  <ion-card *ngIf="photo">
+    <ion-card-content>
+      <img [src]="photo">
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+```
 
 # Em seguida:
 `ionic build`
